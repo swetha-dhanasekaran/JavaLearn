@@ -19,6 +19,10 @@ public class Application {
 		arg.add("jdbc");
 		arg.add("aop");
 		arg.add("another");
+		arg.add("another");
+		arg.add("another");
+
+		
 //		arg.sort((o1, o2) -> o1.compareTo(String.valueOf(o2.compareTo(o1))));
 		List<String> colletedList = arg.stream().filter(str ->str.startsWith("a")).collect(Collectors.toList());
 		colletedList.stream().forEach(System.out::println);
